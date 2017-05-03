@@ -1,0 +1,28 @@
+# Excluded because it contains sensitive configs
+/.ssh
+/.gnupg
+
+# Excluded because it contains volatile data
+/.CFUserTextEncoding
+/.Trash
+/.autoenv_authorized
+/.bash_history
+/.bash_sessions
+/.gem
+/.lesshst
+/.nvm
+/.oracle_jre_usage
+/.viminfo
+/tmp
+
+# Excluded because these are dirs which contain large amounts of data and ony little config
+/Applications
+/Desktop
+/Documents
+/Downloads
+/Library
+/Movies
+/Music
+/Pictures
+/Public
+/p
