@@ -1,2 +1,4 @@
 [user]
-  email = Marko.Schulz@gmail.com
+	email = Marko.Schulz@gmail.com
+[color]
+	ui = always
