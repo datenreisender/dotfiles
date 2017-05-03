@@ -8,6 +8,7 @@
 /.autoenv_authorized
 /.bash_history
 /.bash_sessions
+/.dropbox
 /.gem
 /.lesshst
 /.nvm
@@ -26,3 +27,4 @@
 /Pictures
 /Public
 /p
+/var
