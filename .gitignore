@@ -6,13 +6,19 @@
 /.CFUserTextEncoding
 /.Trash
 /.autoenv_authorized
+/.babel.json
 /.bash_history
 /.bash_sessions
+/.coursier
 /.dropbox
 /.gem
+/.ivy2
 /.lesshst
 /.nvm
 /.oracle_jre_usage
+/.pdfbox.cache
+/.psql_history
+/.sbt
 /.viminfo
 /tmp
 
