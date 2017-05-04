@@ -9,6 +9,7 @@ alias gd="git diff"
 alias gdc="git diff --cached"
 alias gp="git push"
 alias gs="git status"
+alias gsp="git smart-pull"
 
 alias cask="brew cask"
 
