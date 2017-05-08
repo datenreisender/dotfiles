@@ -14,12 +14,14 @@
 /.gem
 /.ivy2
 /.lesshst
+/.npm
 /.nvm
 /.oracle_jre_usage
 /.pdfbox.cache
 /.psql_history
 /.sbt
 /.viminfo
+/.z
 /tmp
 
 # Excluded because these are dirs which contain large amounts of data and ony little config

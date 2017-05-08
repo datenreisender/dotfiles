@@ -17,6 +17,8 @@ alias cask="brew cask"
 
 [ -f /usr/local/opt/autoenv/activate.sh ] && . /usr/local/opt/autoenv/activate.sh
 
+[ -f /usr/local/etc/profile.d/z.sh ] && . /usr/local/etc/profile.d/z.sh
+
 if [ -f /usr/local/opt/nvm/nvm.sh ]; then
   export NVM_DIR="$HOME/.nvm"
   mkdir -p "$NVM_DIR"
