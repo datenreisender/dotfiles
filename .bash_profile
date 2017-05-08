@@ -24,3 +24,5 @@ if [ -f /usr/local/opt/nvm/nvm.sh ]; then
   mkdir -p "$NVM_DIR"
   . "/usr/local/opt/nvm/nvm.sh"
 fi
+
+[ -f .bash_profile-private ] && . .bash_profile-private

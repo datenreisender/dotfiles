@@ -1,6 +1,7 @@
 # Excluded because it contains sensitive configs
-/.ssh
+/.bash_profile-private
 /.gnupg
+/.ssh
 
 # Excluded because it contains volatile data
 /.CFUserTextEncoding
