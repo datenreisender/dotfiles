@@ -35,6 +35,7 @@ cask 'keepingyouawake'
 cask 'mpv'
 cask 'owncloud'
 cask 'screenhero'
+cask 'skitch'
 cask 'slack'
 cask 'spotify'
 cask 'textmate'
@@ -42,3 +43,4 @@ cask 'tripmode'
 cask 'visual-studio-code'
 mas 'GIF Brewery 3', id: 1081413713
 mas 'iA Writer', id: 775737590
+mas 'Xcode', id: 497799835
