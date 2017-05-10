@@ -2,3 +2,5 @@
 	email = Marko.Schulz@gmail.com
 [color]
 	ui = always
+[push]
+	default = current

@@ -7,11 +7,15 @@ alias gci="git commit -v"
 alias gco="git checkout"
 alias gd="git diff"
 alias gdc="git diff --cached"
+alias gl="git log"
+alias gsl="git smart-log"
 alias gp="git push"
 alias gs="git status"
 alias gsp="git smart-pull"
 
 alias cask="brew cask"
+
+alias h=history
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
