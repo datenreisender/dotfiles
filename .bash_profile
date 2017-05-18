@@ -29,4 +29,4 @@ if [ -f /usr/local/opt/nvm/nvm.sh ]; then
   . "/usr/local/opt/nvm/nvm.sh"
 fi
 
-[ -f .bash_profile-private ] && . .bash_profile-private
+[ -f ~/.bash_profile-private ] && . ~/.bash_profile-private
