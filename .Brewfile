@@ -7,6 +7,7 @@ brew "autoenv"
 brew "bash-completion"
 brew "git"
 brew "httpie"
+brew "jq"
 brew "mas"
 brew "nvm"
 brew "osxutils"
@@ -27,8 +28,10 @@ cask "docker"
 cask "dropbox"
 cask "firefox"
 cask "gfxcardstatus"
+cask "gimp"
 cask "google-chrome-beta"
 cask "gpgtools-beta"
+cask "hyper"
 cask "intel-haxm"
 cask "intellij-idea"
 cask "istat-menus"
@@ -37,6 +40,7 @@ cask "java"
 cask "keepingyouawake"
 cask "mpv"
 cask "owncloud"
+cask "rocket"
 cask "screenhero"
 cask "skitch"
 cask "slack"
@@ -49,4 +53,5 @@ mas "iA Writer", id: 775737590
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Simplenote", id: 692867256
 mas "Xcode", id: 497799835
