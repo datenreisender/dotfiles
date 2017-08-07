@@ -1,6 +1,25 @@
+[core]
+	pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less -+S
 [user]
 	email = Marko.Schulz@gmail.com
+[branch]
+	autosetuprebase = always
 [color]
 	ui = always
 [push]
 	default = current
+[commit]
+	verbose = true
+[diff]
+	wsErrorHighlight = old,new,context
+	wordregex = [[:alnum:]]+|[^[:space:]]
+	renames = copy
+	indentHeuristic = true
+[alias]
+	lol2 = log --pretty=oneline --abbrev-commit --graph --decorate -20
+	lol = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	st = status
+	in = !git fetch && git log --pretty=oneline --abbrev-commit --graph ..@{u} && git diff --stat ..@{u}
+	url =!bash -c 'git config --get remote.origin.url | sed -E "s/.+:\\(.+\\)\\.git$/https:\\\\/\\\\/github\\\\.com\\\\/\\\\1/g"'
+	grep-log = log -i -G

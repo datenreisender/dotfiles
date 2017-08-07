@@ -1,5 +1,5 @@
 # Excluded because it contains sensitive configs
-/.bash_profile-private
+/.private
 /.gnupg
 /.ssh
 
