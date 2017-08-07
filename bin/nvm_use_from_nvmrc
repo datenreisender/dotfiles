@@ -1,0 +1,20 @@
+#!/bin/bash
+
+command -v nvm > /dev/null || return
+
+# Adapted from https://github.com/creationix/nvm#calling-nvm-use-automatically-in-a-directory-with-a-nvmrc-file
+
+nvmrc_node_version() {
+  nvm version "$(cat "$(nvm_find_nvmrc)")"
+}
+
+if [ -n "$(nvm_find_nvmrc)" ]; then
+  if [ "$(nvmrc_node_version)" = "N/A" ]; then
+    nvm install
+  elif [ "$(nvmrc_node_version)" != "$(nvm version)" ]; then
+    nvm use
+  fi
+elif [ "$(nvm version)" != "$(nvm version default)" ]; then
+  echo "Reverting to nvm default version"
+  nvm use default
+fi
