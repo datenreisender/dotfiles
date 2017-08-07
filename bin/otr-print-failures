@@ -1,0 +1,5 @@
+#!/bin/bash
+
+. "$(dirname "$0")/otr-bin/_common.sh"
+
+print_failures

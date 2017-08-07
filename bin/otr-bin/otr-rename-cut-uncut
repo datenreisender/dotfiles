@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+(Dir.glob '*DE.mpg.*').each { |f|
+  File.rename f, (f.sub(/^\d+_/, '').
+                    sub(/H(Q|D).avi/,'H\1.ungeschnitten.avi').
+                    sub(/cut.mp4/, 'geschnitten.mp4'))
+}

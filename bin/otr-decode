@@ -1,0 +1,10 @@
+#!/bin/sh
+
+. "$(dirname "$0")/otr-bin/_common.sh"
+
+cd_to_download_dir
+
+pwd
+
+"$OTR_SCRIPT_DIR/decode-all.sh"         && \
+"$OTR_SCRIPT_DIR/otr-rename-cut-uncut"

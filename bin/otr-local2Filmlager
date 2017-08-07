@@ -1,0 +1,6 @@
+#!/bin/bash
+
+. "$(dirname "$0")/otr-bin/_common.sh"
+
+open "$LOCAL_DOWNLOAD_DIR"
+mv -v "$LOCAL_DOWNLOAD_DIR/"* "$CENTRAL_DOWNLOAD_DIR" && otr-decode-move

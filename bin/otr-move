@@ -1,0 +1,8 @@
+#!/bin/sh
+
+. "$(dirname "$0")/otr-bin/_common.sh"
+
+if [ -d "$CENTRAL_DOWNLOAD_DIR" ]; then
+  cd "$CENTRAL_DOWNLOAD_DIR"
+  "$OTR_SCRIPT_DIR/moveFinishedFiles.groovy" && print_current_files
+fi

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+#resize -s 44 188 > /dev/null
+cat ~/downloads.txt && caffeinate otr-fetch && (otr-decode; otr-print-failures)
