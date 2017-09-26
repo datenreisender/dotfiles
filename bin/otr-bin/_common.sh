@@ -27,6 +27,7 @@ function cd_to_download_dir {
   if [ -d "$CENTRAL_DOWNLOAD_DIR" ]; then
     cd "$CENTRAL_DOWNLOAD_DIR"
   else
+    mkdir -p "$LOCAL_DOWNLOAD_DIR"
     cd "$LOCAL_DOWNLOAD_DIR"
   fi
 }
