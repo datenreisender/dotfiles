@@ -1,0 +1,1 @@
+/Users/ms/.config/fisherman/z/functions/__z.fish

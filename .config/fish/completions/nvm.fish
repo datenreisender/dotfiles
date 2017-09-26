@@ -1,0 +1,1 @@
+/Users/ms/.config/fisherman/nvm/completions/nvm.fish
