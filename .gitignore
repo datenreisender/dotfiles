@@ -1,5 +1,5 @@
 # Excluded because it contains sensitive configs
-/.gnupg
+/.gnupg*
 /.pgpass
 /.private
 /.ssh
