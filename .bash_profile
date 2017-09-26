@@ -2,8 +2,10 @@ PATH=$PATH:~/bin:node_modules/.bin
 
 export EDITOR="mate -w"
 
-HISTSIZE=10000
-HISTFILESIZE=50000
+HISTSIZE=100000
+HISTFILESIZE=100000
+HISTCONTROL=ignoredups:erasedups  
+shopt -s histappend
 
 alias g=git
 alias ga="git add"
