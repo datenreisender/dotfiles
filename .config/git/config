@@ -1,11 +1,10 @@
 [core]
-	pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less -+S
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [user]
 	email = Marko.Schulz@gmail.com
+	name = Marko Schulz
 [branch]
 	autosetuprebase = always
-[color]
-	ui = always
 [push]
 	default = current
 [commit]
@@ -16,6 +15,7 @@
 	renames = copy
 	indentHeuristic = true
 [alias]
+	co = checkout
 	lol2 = log --pretty=oneline --abbrev-commit --graph --decorate -20
 	lol = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
@@ -23,3 +23,10 @@
 	in = !git fetch && git log --pretty=oneline --abbrev-commit --graph ..@{u} && git diff --stat ..@{u}
 	url =!bash -c 'git config --get remote.origin.url | sed -E "s/.+:\\(.+\\)\\.git$/https:\\\\/\\\\/github\\\\.com\\\\/\\\\1/g"'
 	grep-log = log -i -G
+	ls-ignored = ls-files --others --ignored --exclude-standard
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
