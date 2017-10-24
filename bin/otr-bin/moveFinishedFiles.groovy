@@ -29,6 +29,7 @@ verschiebeMuster = nachMusterIndiziert([
         Being_Human
         Blue_Bloods
         Case_Histories
+        Cleverman
         Criminal_Minds
         Damages
         Danni_Lowinski
@@ -100,6 +101,8 @@ verschiebeMuster = nachMusterIndiziert([
         Quantico
         Orange_is_the_New_Black
         Agatha_Christie__Moerderische_Spiele
+        The_Magicians
+        Fargo
         """
   , 'Meike': """
         Prime_Suspect
