@@ -1,4 +1,3 @@
-eval (direnv hook fish)
 
 
 # tabtab source for serverless package
