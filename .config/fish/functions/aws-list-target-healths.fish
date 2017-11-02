@@ -1,4 +1,4 @@
-function aws-list-target-healts
+function aws-list-target-healths
 	aws elbv2 describe-target-groups \
     | jq --raw-output '.TargetGroups[].TargetGroupArn' \
     | while read arn
