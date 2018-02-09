@@ -83,8 +83,10 @@ verschiebeMuster = nachMusterIndiziert([
         Elementary
         Good_Wife
         Grimm
+        Hooten_the_Lady
         How_to_Get_Away_with_Murder
         Justified
+        Lethal_Weapon
         Luther
         Major_Crimes
         Orphan_Black
