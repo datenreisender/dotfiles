@@ -5,6 +5,7 @@
 /.ssh
 
 # Excluded because it contains volatile data
+cache
 /.CFUserTextEncoding
 /.Trash
 /.autoenv_authorized
