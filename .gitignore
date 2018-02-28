@@ -37,7 +37,7 @@ cache
 /.vscode/extensions
 /.yarnrc
 /.z
-/downloads.txt
+/downloads*.txt
 /tmp
 
 # Excluded because these are dirs which contain large amounts of data and ony little config
