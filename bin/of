@@ -2,4 +2,4 @@
 
 printf '\e[8;44;188t'
 #resize -s 44 188 > /dev/null
-cat ~/downloads.txt && caffeinate otr-fetch && (otr-decode-move; otr-print-failures)
+cat ~/downloads.txt && caffeinate otr-fetch && (caffeinate otr-decode-move; otr-print-failures)
