@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Always start at the first line
+code -w -g "$1:1" $1
