@@ -11,7 +11,7 @@
 [commit]
 	verbose = true
 [diff]
-	wsErrorHighlight = old,new,context
+	wsErrorHighlight = all
 	wordregex = [[:alnum:]]+|[^[:space:]]
 	renames = copy
 	indentHeuristic = true
