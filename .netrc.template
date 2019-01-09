@@ -1,0 +1,3 @@
+machine github.com
+  login datenreisender
+  password to-be-generated-on-https://github.com/settings/tokens

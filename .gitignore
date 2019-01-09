@@ -3,6 +3,7 @@
 /.pgpass
 /.private
 /.ssh
+/.netrc
 
 # Excluded because it contains volatile data
 cache
