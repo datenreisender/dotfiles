@@ -2,7 +2,7 @@
 
 . "$(dirname "$0")/otr-bin/_common.sh"
 
-cd_to_download_dir
+cd "$LOCAL_DOWNLOAD_DIR"
 
 pwd
 
