@@ -78,5 +78,7 @@ dockutil --add '~/Downloads' --display stack
 		- Kalender/Kalender: alt-cmd-1
 
 - Install Pulse Secure
+- Copy `~/.private/otr.template` to `~/.private/otr` and add missing data
+
 # Unclear
 Use VS-Code-Settings

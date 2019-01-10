@@ -1,7 +1,6 @@
 # Excluded because it contains sensitive configs
 /.gnupg*
 /.pgpass
-/.private
 /.ssh
 /.netrc
 
