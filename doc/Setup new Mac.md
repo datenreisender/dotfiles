@@ -2,8 +2,8 @@
 - Start Mac in recovery mode (⌘-R), delete the root partition, create a new one that is case-sensitive (and of course encrypted), reinstall macOS.
 - Finish fixed macOS setup (do not restore from somewhere, login with Apple-ID)
 - Install Homebrew according to https://brew.sh
-- Maybe: Already clone the dotfiles repo now and install everything from the Brewfile with `brew bundle --global`?
-- Probably not needed anymore: `brew cask install 1password`
+- Clone the dotfiles repo https://github.com/datenreisender/dotfiles
+- Install everything from the Brewfile with `brew bundle --global; brew bundle --global`
 - Copy `.netrc.template` to `.netrc` and add missing password
 - Maybe adjust email address in `.config/git/config`
 
