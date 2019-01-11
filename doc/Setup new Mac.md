@@ -81,4 +81,6 @@ dockutil --add '~/Downloads' --display stack
 - Copy `~/.private/otr.template` to `~/.private/otr` and add missing data
 
 # Unclear
-Use VS-Code-Settings
+- Use VS-Code-Settings
+- WHat to do with `.config/fish/fish_variables`
+- What to do about `set -xU LSCOLORS Exfxcxdxbxegedabagacad`
