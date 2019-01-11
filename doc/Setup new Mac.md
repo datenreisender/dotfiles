@@ -25,8 +25,6 @@ mkdir -p "$HOME/p"
 cd "$HOME/p"
 cit clone …
 ```
-- Nach der Installation von xCode (durch .Brewfile):
-       sudo xcode-select --switch /Applications/Xcode.app
 - Empty Dock, keep only Downloads:
 ```
 dockutil --remove all
