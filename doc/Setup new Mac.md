@@ -2,28 +2,27 @@
 - Start Mac in recovery mode (⌘-R), delete the root partition, create a new one that is case-sensitive (and of course encrypted), reinstall macOS.
 - Finish fixed macOS setup (do not restore from somewhere, login with Apple-ID)
 - Install Homebrew according to https://brew.sh
+- Make fish default-shell: `chsh -s /usr/local/bin/fish`
 - Clone the dotfiles repo https://github.com/datenreisender/dotfiles
 - Install everything from the Brewfile with `brew bundle --global; brew bundle --global`
 - Copy `.netrc.template` to `.netrc` and add missing password
 - Maybe adjust email address in `.config/git/config`
 
-- Make fish default-shell: `chsh -s /usr/local/bin/fish`
-- `gem install git-smart`
+- `sudo gem install git-smart`
 - System preferences:
     - Sharing: Set computer name
     - Internet accounts:
-        - iCloud: Activate “Back to My Mac”
         - Activate:
             - Exchange: Calendar
             - Google: All
             - Twitter
-- Update everything in the App store: `sudo softwareupdate --install --all`
+- Update everything in the App store: `softwareupdate --install --all`
 - Copy over ~/.ssh from old computer via Airdrop
 - Checkout my projects:
 ```sh
 mkdir -p "$HOME/p"
 cd "$HOME/p"
-cit clone …
+git clone …
 ```
 - Empty Dock, keep only Downloads:
 ```
@@ -72,7 +71,9 @@ dockutil --add '~/Downloads' --display stack
 			- Select Previous Tab: alt-cmd-←
 			- Toggle Full Screen: ctrl-cmd-f
 			- Vollbild: ctrl-cmd-f
-		- mpv/Quit mpv & remember position: cmd-q
+		- mpv
+      - Quit and Remember Position: cmd-q
+      - Quit mpv: alt-cmd-q
 		- Nachrichten/Nachrichten: alt-cmd-1
 		- Mail/Hauptfenster: alt-cmd-1
 		- Kalender/Kalender: alt-cmd-1
@@ -82,5 +83,5 @@ dockutil --add '~/Downloads' --display stack
 
 # Unclear
 - Use VS-Code-Settings
-- WHat to do with `.config/fish/fish_variables`
+- What to do with `.config/fish/fish_variables`
 - What to do about `set -xU LSCOLORS Exfxcxdxbxegedabagacad`
