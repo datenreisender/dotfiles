@@ -2,9 +2,9 @@
 - Start Mac in recovery mode (⌘-R), delete the root partition, create a new one that is case-sensitive (and of course encrypted), reinstall macOS.
 - Finish fixed macOS setup (do not restore from somewhere, login with Apple-ID)
 - Install Homebrew according to https://brew.sh
-- Make fish default-shell: `chsh -s /usr/local/bin/fish`
-- Clone the dotfiles repo https://github.com/datenreisender/dotfiles
+- Clone the dotfiles repo https://github.com/datenreisender/dotfiles and move it into the home folder.
 - Install everything from the Brewfile with `brew bundle --global; brew bundle --global`
+- Make fish default-shell: `sudo bash -c 'echo /usr/local/bin/fish >> /etc/shells'; chsh -s /usr/local/bin/fish`
 - Copy `.netrc.template` to `.netrc` and add missing password
 - Maybe adjust email address in `.config/git/config`
 
@@ -15,7 +15,6 @@
         - Activate:
             - Exchange: Calendar
             - Google: All
-            - Twitter
 - Update everything in the App store: `softwareupdate --install --all`
 - Copy over ~/.ssh from old computer via Airdrop
 - Checkout my projects:
@@ -34,7 +33,7 @@ dockutil --add '~/Downloads' --display stack
 	- Alfred
     	- Licence
     	- Preferences→Advanced→Set preference folder… to iCloud folder
-    	- Set Hotkey setzen
+    	- Set Hotkey
     	- Activate Clipboard-History
     	- Activate 1Password
 	- Mail (Disable sound for new mails, Darstellung -> Gelöschte Emails bewegen nach -> Archiv)
@@ -42,17 +41,16 @@ dockutil --add '~/Downloads' --display stack
 	- Google Chrome
 		* Activate Sync
 		* Remove unused symbols from the bar
-	- Bartender (Licence, place icon right of Spotlight, Settings)
 	- gfxcardstatus
-	- istat-menus (Ex-/Import settings from iCloud/Shared Preferences)
-	- iTerm (Use „Load preferences from a custom folder“ with iCloud/Shared Preferences)
+	- istat-menus (Lizenz, File->Ex-/Import settings from iCloud/Shared Preferences)
+	- iTerm (Use „Load preferences from a custom folder“ with iCloud/Shared Preferences, restart iTerm!)
 	- Spectacle (See in iCloud/Shared preferences)
+	- Bartender (Licence, place icon right of Spotlight, Settings)
 - Settings (unfinished)
 	- Code
 		- Install extensions (Editorconfig)
 		- Settings
 	- System preferences
-  - 1password (Licence)
 	- Safari
 	- Textmate (Licence, Plugin: Editorconfig)
 
@@ -72,8 +70,8 @@ dockutil --add '~/Downloads' --display stack
 			- Toggle Full Screen: ctrl-cmd-f
 			- Vollbild: ctrl-cmd-f
 		- mpv
-      - Quit and Remember Position: cmd-q
-      - Quit mpv: alt-cmd-q
+			- Quit and Remember Position: cmd-q
+			- Quit mpv: alt-cmd-q
 		- Nachrichten/Nachrichten: alt-cmd-1
 		- Mail/Hauptfenster: alt-cmd-1
 		- Kalender/Kalender: alt-cmd-1
@@ -85,3 +83,4 @@ dockutil --add '~/Downloads' --display stack
 - Use VS-Code-Settings
 - What to do with `.config/fish/fish_variables`
 - What to do about `set -xU LSCOLORS Exfxcxdxbxegedabagacad`
+- Do I still neet to run something like `fisher add < ~/.config/fish/fishfile`?
