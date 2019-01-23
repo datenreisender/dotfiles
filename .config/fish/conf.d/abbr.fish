@@ -10,10 +10,11 @@ abbr -a gd git diff
 abbr -a gdc git diff --cached
 abbr -a gl git log
 abbr -a gp git push
-abbr -a gpf git push --force
+abbr -a gpf git push --force-with-lease
 abbr -a gs git status
 abbr -a gsp git smart-pull
 abbr -a gst git status
 
-abbr -a idea /Applications/IntelliJ IDEA.app/Contents/MacOS/idea
 abbr -a cask brew cask
+
+abbr -a l ll
