@@ -1,0 +1,6 @@
+#!/bin/bash
+
+WIDTH="$1"
+HEIGHT="$2"
+
+printf "\e[8;${WIDTH};${HEIGHT}t"

@@ -7,4 +7,4 @@ awk -F\# '{print $1}' >> "$DOWNLOADS"
 echo ----------
 cat "$DOWNLOADS"
 
-resize -s 44 188 > /dev/null
+resize 44 144
