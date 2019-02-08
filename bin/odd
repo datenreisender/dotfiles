@@ -1,4 +1,4 @@
 #!/bin/sh
 
-trash /Users/ms/downloads.txt
+trash $HOME/downloads.txt
 pbpaste | otr-grep-downloads
