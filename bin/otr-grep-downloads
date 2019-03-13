@@ -7,4 +7,4 @@ awk -F\# '{print $1}' >> "$DOWNLOADS"
 echo ----------
 cat "$DOWNLOADS"
 
-resize 44 144
+resize "" $(longest_line < $DOWNLOADS)

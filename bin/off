@@ -1,4 +1,4 @@
 #!/bin/sh
 
-resize 44 144
+resize "" $(longest_line < ~/downloads.txt)
 cat ~/downloads.txt && caffeinate otr-fetch && (otr-decode-move; otr-print-failures)

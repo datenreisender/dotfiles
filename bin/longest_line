@@ -1,0 +1,7 @@
+#!/usr/bin/env fish
+
+# Output the length of the longest line in STDIN
+
+while read -l line
+      string length $line
+end | sort -n | tail -1
