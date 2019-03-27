@@ -1,4 +1,7 @@
 #!/bin/sh
 
 resize "" $(longest_line < ~/downloads.txt)
-cat ~/downloads.txt && caffeinate otr-fetch && (otr-decode-move; otr-print-failures)
+caffeinate bash -c "
+  cat ~/downloads.txt &&
+  otr-fetch &&
+  (otr-decode-move; otr-print-failures)"

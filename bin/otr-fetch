@@ -2,19 +2,19 @@
 
 . "$(dirname "$0")/otr-bin/_common.sh"
 
-caffeinate java -jar ~/bin/otr-bin/HappyHour-Warter.jar &&
+java -jar ~/bin/otr-bin/HappyHour-Warter.jar &&
   cd "$LOCAL_DOWNLOAD_DIR" &&
-	  caffeinate ~/bin/otr-bin/fetch-all.sh "$DOWNLOADS" "$FAILURES"
+	  ~/bin/otr-bin/fetch-all.sh "$DOWNLOADS" "$FAILURES"
 
 if [ -a "$FAILURES" ]; then
   echo Sleeping a bit…
   date
-  caffeinate sleep 600
+  sleep 600
 
   echo Ok, so much for that, now let´s retry…
   date
 
-  caffeinate ~/bin/otr-bin/fetch-all.sh "$FAILURES" "$DOUBLEFAILURES"
+  ~/bin/otr-bin/fetch-all.sh "$FAILURES" "$DOUBLEFAILURES"
 fi
 
 print_current_files
