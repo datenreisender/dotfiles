@@ -107,6 +107,7 @@ verschiebeMuster = nachMusterIndiziert([
         Agatha_Christie__Moerderische_Spiele
         The_Magicians
         Fargo
+        The_Orville
         """
   , 'Meike': """
         Prime_Suspect
