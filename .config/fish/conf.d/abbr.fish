@@ -1,20 +1,22 @@
-abbr -a g git
-abbr -a gaa git add --all
-abbr -a ga git add
-abbr -a gc git commit
-abbr -a gca git commit --all
-abbr -a gcnv git commit --no-verify
-abbr -a gcanv git commit --all --no-verify
-abbr -a gco git checkout
-abbr -a gd git diff
-abbr -a gdc git diff --cached
-abbr -a gl git log
-abbr -a gp git push
-abbr -a gpf git push --force-with-lease
-abbr -a gs git status
-abbr -a gsp git smart-pull
-abbr -a gst git status
+abbr g git
+abbr gaa git add --all
+abbr ga git add
+abbr gc git commit
+abbr gca git commit --all
+abbr gcf 'git add --all && git commit --no-verify & npm t && npm run lint'
+abbr gcnv git commit --no-verify
+abbr gcanv git commit --all --no-verify
+abbr gco git checkout
+abbr gd git diff
+abbr gdc git diff --cached
+abbr gl git log
+abbr gp git pull
+abbr gpf git push --force-with-lease
+abbr gps git push
+abbr gs git status
+abbr gsp git smart-pull
+abbr gst git status
 
-abbr -a cask brew cask
+abbr cask brew cask
 
-abbr -a l ll
+abbr l ll
