@@ -1,8 +1,8 @@
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
-  editor = ~/bin/edit_commit_message
+	editor = ~/bin/edit_commit_message
 [user]
-	email = Marko.Schulz@gmail.com
+	email = Marko.Schulz@nordicsemi.no
 	name = Marko Schulz
 [branch]
 	autosetuprebase = always
