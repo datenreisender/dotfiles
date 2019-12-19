@@ -1,0 +1,6 @@
+#!/bin/sh
+
+searchterm="$1"
+shift
+
+less -p "$searchterm" $(rg -l "$searchterm" "$*")
