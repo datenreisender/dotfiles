@@ -5,4 +5,5 @@
 if [ -d "$CENTRAL_DOWNLOAD_DIR" ]; then
   cd "$CENTRAL_DOWNLOAD_DIR"
   "$OTR_SCRIPT_DIR/moveFinishedFiles.groovy" && print_current_files
+  "$OTR_SCRIPT_DIR/index_existing_movies.sh"
 fi
