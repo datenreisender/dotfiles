@@ -13,9 +13,11 @@ cache
 /.bash_history
 /.bash_sessions
 /.cache
+/.cmake-js
 /.coursier
 /.cups
 /.dropbox
+/.electron-gyp
 /.gem
 /.gradle
 /.groovy
@@ -26,6 +28,7 @@ cache
 /.node_repl_history
 /.node-gyp
 /.npm
+/.nrfconnect-apps
 /.nvm
 /.oracle_jre_usage
 /.pdfbox.cache
@@ -54,3 +57,4 @@ cache
 /old
 /p
 /var
+/w
