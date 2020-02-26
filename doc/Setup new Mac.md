@@ -29,6 +29,7 @@ dockutil --remove all
 dockutil --add '~/Downloads' --display stack
 ```
 
+- Install the USGerman Keyboard Layout from https://hci.rwth-aachen.de/usgermankeyboard
 - App-Settings:
 	- Alfred
     	- Licence
