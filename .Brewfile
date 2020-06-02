@@ -116,5 +116,4 @@ mas "Simplenote", id: 692867256
 mas "Spark", id: 1176895641
 mas "Type2Phone", id: 472717129
 mas "Typeeto", id: 970502923
-mas "Wunderlist", id: 410628904
 mas "Xcode", id: 497799835
