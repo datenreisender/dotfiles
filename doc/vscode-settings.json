@@ -11,7 +11,9 @@
     "**/target/*": true,
     "dist/*": true
   },
-  "eslint.autoFixOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
   "terminal.external.osxExec": "iTerm.app",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.quickOpen.closeOnFocusLost": false,
