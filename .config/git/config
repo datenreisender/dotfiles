@@ -1,5 +1,6 @@
 [core]
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	# pager = diff-so-fancy | less --tabs=4 -RFX
+	pager = delta
 	editor = ~/bin/edit_commit_message
 [user]
 	email = Marko.Schulz@nordicsemi.no
@@ -9,17 +10,21 @@
 [push]
 	default = current
 	followTags = true
+	autoSetupRemote = true
 [commit]
 	verbose = true
 [diff]
+	algorithm = histogram
 	wsErrorHighlight = all
 	wordregex = [[:alnum:]]+|[^[:space:]]
 	renames = copy
 	indentHeuristic = true
+	colorMoved = default
+[pretty]
+    lol = "format:%C(#d68c43 dim)%h %C(auto)%d %C(#45a725)%cd %C(white no-dim)%s %C(#68d643)%aN"
 [alias]
 	co = checkout
-	lol2 = log --pretty=oneline --abbrev-commit --graph --decorate -20
-	lol = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	lol = log --graph --date=short --pretty=lol
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	st = status
 	in = !git fetch && git log --pretty=oneline --abbrev-commit --graph ..@{u} && git diff --stat ..@{u}
@@ -33,4 +38,35 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [pull]
-	rebase = true
+	# rebase = true
+    ff = only
+[rebase]
+	autoSquash = true
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[diff-so-fancy]
+	first-run = false
+[merge]
+	conflictstyle = zdiff3
+
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	# navigate = true  # use n and N to move between diff sections
+	# For navigation DELTA_NAVIGATE=1 is currently the better solution
+
+    side-by-side = true
+[init]
+	defaultBranch = main
