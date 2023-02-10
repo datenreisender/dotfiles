@@ -12,7 +12,7 @@ const infoCommand = 'yt-dlp --list-formats --print format ' +urls[0];
 const downloadCommand = [
     `yt-dlp --output '${path.basename(
         process.cwd()
-    )} S01E%(autonumber)02d - %(title)s.%(ext)s'`,
+    )} S01E%(autonumber)02d - %(title)s.%(ext)s' --autonumber-start 1`,
     ...urls,
 ].join(" ");
 // const downloadCommand = [`yt-dlp --recode-video mp4 --output '${path.basename(process.cwd())} S01E%(autonumber)02d - %(title)s.%(ext)s'`, ...urls].join(' ')
