@@ -5,7 +5,6 @@
 - Clone the dotfiles repo https://github.com/datenreisender/dotfiles and move it into the home folder.
 - Install everything from the Brewfile with `brew bundle --global; brew bundle --global`
 - Make fish default-shell: `sudo bash -c 'echo /usr/local/bin/fish >> /etc/shells'; chsh -s /usr/local/bin/fish`
-- Copy `.netrc.template` to `.netrc` and add missing password
 - Maybe adjust email address in `.config/git/config`
 
 - `sudo gem install git-smart`
