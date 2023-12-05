@@ -1,21 +1,20 @@
 tap "buo/cask-upgrade"
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
 tap "microsoft/git"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
+tap "oven-sh/bun"
+# Color management engine supporting ICC profiles
+brew "little-cms2"
+# New file format for still image compression
+brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
 # Record and share terminal sessions
 brew "asciinema"
 # Per-project, per-directory shell environments
 brew "autoenv"
-# Integrated shell for working with the AWS CLI
-brew "aws-shell"
-# Official Amazon AWS command-line interface
-brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Programmable completion for Bash 3.2
@@ -26,10 +25,12 @@ brew "bat"
 brew "boost"
 # Core application library for C
 brew "glib"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
-# Tool Command Language
-brew "tcl-tk"
+# Vector graphics library with cross-device output support
+brew "cairo"
+# C parser in Python
+brew "pycparser"
+# C Foreign Function Interface for Python
+brew "cffi"
 # Checks for bashisms in shell scripts
 brew "checkbashisms"
 # Cross-platform make
@@ -44,28 +45,32 @@ brew "coreutils"
 brew "deno"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
+# Diff that understands syntax
+brew "difftastic"
 # Load/unload environment variables based on $PWD
 brew "direnv"
 # Utilities for converting macOS DMG images
 brew "dmg2img"
 # Tool for managing dock items
 brew "dockutil"
+# Text processing system for reStructuredText
+brew "docutils"
 # Collection of reusable C++ library artifacts developed at Facebook
 brew "folly"
+# Shared library for Watchman and Eden projects
+brew "edencommon"
 # Functional programming language for building browser-based GUIs
 brew "elm"
 # C++14 implementation of the TLS-1.3 standard
 brew "fizz"
 # Modular, composable client/server abstractions framework
 brew "wangle"
-# Facebook's branch of Apache Thrift, including a new C++ server
-brew "fbthrift"
 # Thrift functions for querying information from a service
 brew "fb303"
+# Facebook's branch of Apache Thrift, including a new C++ server
+brew "fbthrift"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# GNU Ubiquitous Intelligent Language for Extensions
-brew "guile"
 # Library to load and enumerate PKCS#11 modules
 brew "p11-kit"
 # Validating, recursive, caching DNS resolver
@@ -82,6 +87,8 @@ brew "libass"
 brew "mbedtls"
 # Secure Reliable Transport
 brew "srt"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -92,22 +99,36 @@ brew "fzf"
 brew "gcc@9"
 # GitHub command-line tool
 brew "gh"
+# Interpreter for PostScript and PDF
+brew "ghostscript"
 # Distributed revision control system
 brew "git"
+# C library implementing the SSH2 protocol
+brew "libssh2"
+# Automatic git commit --fixup
+brew "git-absorb"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Tool Command Language
+brew "tcl-tk"
 # Tcl/Tk UI for the git revision control system
 brew "git-gui"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Linting for your git commit messages
 brew "gitlint"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Library access to GnuPG
+brew "gpgme"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
-# Development kit for the Java programming language
-brew "openjdk"
 # Java-based scripting language
 brew "groovy"
+# GNU Ubiquitous Intelligent Language for Extensions
+brew "guile"
 # Popular GNU data compression program
 brew "gzip"
 # Convert source code to formatted text with syntax highlighting
@@ -118,6 +139,10 @@ brew "httpie"
 brew "hub"
 # Database of common MIME types
 brew "shared-mime-info"
+# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+brew "libheif"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Command-line pager for JSON data
@@ -132,12 +157,16 @@ brew "less"
 brew "lesspipe"
 # C library SSHv1/SSHv2 client and server protocols
 brew "libssh"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.8"
 # Next-gen compiler infrastructure
 brew "llvm@8"
 # Next-gen compiler infrastructure
 brew "llvm@9"
 # Mac App Store command-line interface
 brew "mas"
+# Java-based project management
+brew "maven"
 # HTTP/2 C Library
 brew "nghttp2"
 # Network grep
@@ -150,16 +179,18 @@ brew "nlohmann-json"
 brew "node"
 # Platform built on V8 to build network applications
 brew "node@10"
-# Platform built on V8 to build network applications
-brew "node@12"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Platform built on V8 to build network applications
 brew "node@14"
+# Platform built on V8 to build network applications
+brew "node@16"
+# Platform built on V8 to build network applications
+brew "node@18"
 # Trigger notifications when a process completes
 brew "noti"
-# Manage multiple Node.js versions
-brew "nvm"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
+# Thread-based email index, search, and tagging
+brew "notmuch"
 # Collection of macOS command-line utilities
 brew "osxutils"
 # 7-Zip (high compression file archiver) implementation
@@ -178,6 +209,8 @@ brew "rust"
 brew "shellcheck"
 # Super fast C++ logging library
 brew "spdlog"
+# Advanced proxy caching server for HTTP, HTTPS, FTP, and Gopher
+brew "squid"
 # Code-search similar to ack
 brew "the_silver_searcher"
 # Instant terminal sharing
@@ -210,6 +243,8 @@ brew "youtube-dl"
 brew "yt-dlp"
 # Tracks most-used directories to make cd smarter
 brew "z"
+# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
+brew "oven-sh/bun/bun"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Password manager that keeps all passwords secure behind one password
@@ -218,6 +253,8 @@ cask "1password6"
 cask "acorn"
 # Application launcher and productivity software
 cask "alfred"
+# Chromium based browser
+cask "arc"
 # Prevents audio balance from drifting left or right
 cask "balance-lock"
 # Menu bar icon organizer
@@ -235,7 +272,7 @@ cask "cyberduck"
 cask "dash3"
 # Trains AIs to understand and translate texts
 cask "deepl"
-# Draw.io is free online diagram software
+# Online diagram software
 cask "drawio"
 # Web browser
 cask "firefox"
@@ -247,6 +284,8 @@ cask "git-credential-manager-core"
 cask "google-chrome"
 # Utility to fix grammar errors and style issues in text
 cask "grammarly"
+# HTTP(S) debugging proxy, analyzer, and client
+cask "http-toolkit"
 # Terminal built on web technologies
 cask "hyper"
 # Free and open-source media player
@@ -260,8 +299,13 @@ cask "keepingyouawake"
 cask "keybase"
 # GPU-based terminal emulator
 cask "kitty"
-# Configuration software for Logitech Harmony universal remote control
+# Software for Logitech devices
+cask "logi-options-plus"
 cask "logitech-myharmony"
+# Convert avi, wmv, mkv, rm, mov and more to other formats
+cask "media-converter"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
 # Office suite
 cask "microsoft-office"
 # Meet, chat, call, and collaborate in just one place
@@ -330,3 +374,55 @@ mas "Type2Phone", id: 472717129
 mas "Typeeto", id: 970502923
 mas "Vinegar", id: 1591303229
 mas "Xcode", id: 497799835
+vscode "ban.spellright"
+vscode "bmalehorn.vscode-fish"
+vscode "bradlc.vscode-tailwindcss"
+vscode "cmstead.js-codeformer"
+vscode "Codium.codium"
+vscode "cschlosser.doxdocgen"
+vscode "dbaeumer.vscode-eslint"
+vscode "denoland.vscode-deno"
+vscode "EditorConfig.EditorConfig"
+vscode "elmTooling.elm-ls-vscode"
+vscode "esbenp.prettier-vscode"
+vscode "fabiospampinato.vscode-open-in-github"
+vscode "GitHub.copilot"
+vscode "GitHub.copilot-chat"
+vscode "hbenl.vscode-test-explorer"
+vscode "jeff-hykin.better-cpp-syntax"
+vscode "josetr.cmake-language-support-vscode"
+vscode "mattlott.copy-github-url"
+vscode "ms-dotnettools.vscode-dotnet-runtime"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-vscode.cmake-tools"
+vscode "ms-vscode.cpptools"
+vscode "ms-vscode.cpptools-extension-pack"
+vscode "ms-vscode.cpptools-themes"
+vscode "ms-vscode.test-adapter-converter"
+vscode "nordic-semiconductor.nrf-connect"
+vscode "nordic-semiconductor.nrf-connect-extension-pack"
+vscode "nordic-semiconductor.nrf-devicetree"
+vscode "nordic-semiconductor.nrf-kconfig"
+vscode "nordic-semiconductor.nrf-terminal"
+vscode "numso.prettier-standard-vscode"
+vscode "Orta.vscode-jest"
+vscode "Orta.vscode-twoslash-queries"
+vscode "redhat.java"
+vscode "skellock.just"
+vscode "sleistner.vscode-fileutils"
+vscode "stivo.tailwind-fold"
+vscode "tintinweb.vscode-inline-bookmarks"
+vscode "tkw01536.git-commit-format"
+vscode "tombonnike.vscode-status-bar-format-toggle"
+vscode "trond-snekvik.gnu-mapfiles"
+vscode "twxs.cmake"
+vscode "VisualStudioExptTeam.intellicode-api-usage-examples"
+vscode "VisualStudioExptTeam.vscodeintellicode"
+vscode "vscjava.vscode-java-debug"
+vscode "vscjava.vscode-java-dependency"
+vscode "vscjava.vscode-java-pack"
+vscode "vscjava.vscode-java-test"
+vscode "vscjava.vscode-maven"
+vscode "WallabyJs.quokka-vscode"
+vscode "wmaurer.change-case"
