@@ -1,3 +1,0 @@
-#!/bin/sh
-
-/usr/local/Cellar/osxutils/1.9.0/bin/setvolume 5
