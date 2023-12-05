@@ -1,9 +1,12 @@
 set -g fish_user_paths /usr/local/opt/ruby/bin $fish_user_paths
 
-#set NODE_TO_USE 14
-#set -g fish_user_paths "/usr/local/opt/node@$NODE_TO_USE/bin" $fish_user_paths
-#set -gx LDFLAGS "-L/usr/local/opt/node@$NODE_TO_USE/lib"
-#set -gx CPPFLAGS "-I/usr/local/opt/node@$NODE_TO_USE/include"
+# set NODE_TO_USE 18
+if set --query NODE_TO_USE
+    # echo Using Node $NODE_TO_USE
+    set -g fish_user_paths "/usr/local/opt/node@$NODE_TO_USE/bin" $fish_user_paths
+    set -gx LDFLAGS "-L/usr/local/opt/node@$NODE_TO_USE/lib"
+    set -gx CPPFLAGS "-I/usr/local/opt/node@$NODE_TO_USE/include"
+end
 
 # set -g LANG en_GB.UTF-8
 
