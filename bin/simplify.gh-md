@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+STDIN.read.split("\n\n").each do |paragraph|
+   contains_list = /(^|\n)\s*[-*]/.match(paragraph)
+   
+   puts contains_list ? paragraph : paragraph.gsub(/\n/,' ')
+   puts "\n"
+end

@@ -1,0 +1,6 @@
+#!/usr/bin/env fish
+
+set boldGreen (tput setf 2; tput bold)
+set reset (tput sgr0)
+
+echo {$boldGreen}$argv{$reset}
