@@ -1,10 +1,12 @@
+eval $(/opt/homebrew/bin/brew shellenv)
+
 PATH=$PATH:~/bin:node_modules/.bin
 
 export EDITOR="mate -w"
 
 HISTSIZE=100000
 HISTFILESIZE=100000
-HISTCONTROL=ignoredups:erasedups  
+HISTCONTROL=ignoredups:erasedups
 shopt -s histappend
 
 alias g=git
@@ -46,17 +48,12 @@ alias ll="ls -al"
 alias grep="grep --colour=auto"
 alias idea="open -a Intellij\ IDEA"
 
-
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
-
-[ -f /usr/local/opt/autoenv/activate.sh ] && . /usr/local/opt/autoenv/activate.sh
-
-[ -f /usr/local/etc/profile.d/z.sh ] && . /usr/local/etc/profile.d/z.sh
-
-if [ -f /usr/local/opt/nvm/nvm.sh ]; then
-  export NVM_DIR="$HOME/.nvm"
-  mkdir -p "$NVM_DIR"
-  . "/usr/local/opt/nvm/nvm.sh"
+if type brew &>/dev/null
+then
+  HOMEBREW_PREFIX="$(brew --prefix)"
+  [[ -r "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh" ]] && source "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"
+  [[ -f "${HOMEBREW_PREFIX}/opt/autoenv/activate.sh" ]] && . "${HOMEBREW_PREFIX}/opt/autoenv/activate.sh"
+  [[ -f "${HOMEBREW_PREFIX}/etc/profile.d/z.sh" ]] && . "${HOMEBREW_PREFIX}/etc/profile.d/z.sh"
 fi
 
 PS1='\[\033[0;32m\]$(__git_ps1 "%s ")\[\033[0m\]\w \$ '
