@@ -29,6 +29,7 @@ cache
 /.ivy2
 /.lesshst
 /.local
+/.m2
 /.node-gyp
 /.npm
 /.nrfconnect-apps*
